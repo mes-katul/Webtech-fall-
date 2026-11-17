@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threaded Stories - Login</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <!-- Logo Section -->
+        <header class="header">
+            <div class="logo">
+                <span>♧</span>
+            </div>
+
+            <div class="brand">
+                <h3>THREADED STORIES</h3>
+                <p>WEAR YOUR PASSION</p>
+            </div>
+        </header>
+
+        <hr>
+
+        <!-- Welcome Section -->
+        <section class="welcome">
+            <h4>WELCOME BACK</h4>
+            <h1>Unified Login</h1>
+            <p>
+                Your jerseys, your deliveries, your workspace.
+                Pick your role to continue.
+            </p>
+        </section>
+
+        <!-- Login Form -->
+        <form id="loginForm">
+
+            <!-- Role Selection -->
+            <label>Log in as</label>
+
+            <div class="role-selector">
+                <button type="button" class="role active" data-role="Customer">
+                    Customer
+                </button>
+
+                <button type="button" class="role" data-role="Delivery Man">
+                    Delivery Man
+                </button>
+
+                <button type="button" class="role" data-role="Admin">
+                    Admin
+                </button>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email/Phone</label>
+
+                <input
+                    type="text"
+                    id="email"
+                    placeholder="01XXXXXXXXX"
+                    required
+                >
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+                <label for="password">Password</label>
+
+                <div class="password-box">
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="••••••••••••"
+                        required
+                    >
+
+                    <button type="button" id="togglePassword">
+                        <span id="eyeIcon">◉</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Remember and Forgot -->
+            <div class="options">
+
+                <label class="remember">
+                    <input type="checkbox" id="remember">
+                    <span>Remember me</span>
+                </label>
+
+                <a href="#" id="forgotPassword">
+                    Forgot password?
+                </a>
+
+            </div>
+
+            <!-- Login Button -->
+            <button type="submit" class="login-btn">
+                LOGIN <span>→</span>
+            </button>
+
+        </form>
+
+        <!-- Create Account -->
+        <div class="create-account">
+            New to the club?
+            <a href="#" id="createAccount">Create an account</a>
+        </div>
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <span>♙</span>
+            One secure login. Every role covered.
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
